@@ -1,0 +1,31 @@
+nav {
+  background-color: brown;
+  overflow: hidden;
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 2vw;
+  font-size: 3vh;
+  list-style-type: none;
+}
+a {
+   font-family: sans-serif;
+   color: black;
+   font-size: 20px;
+}
+    body {
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-image:url(https://i.pinimg.com/originals/fc/95/fc/fc95fc976d96dae8a5ed458ad7562564.jpg)
+  }
+  input[type=text] {
+  padding:12px;
+  margin:12px 0;
+  box-sizing: border-box;
+}

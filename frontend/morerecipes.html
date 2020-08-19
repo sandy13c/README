@@ -1,0 +1,101 @@
+<html>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src = "additional.js"></script>
+<link href="recipetwo.css" rel="stylesheet"/>
+<body>
+<header>
+   <center>
+       <h1>Addtional Recipes</h1>
+     <center>
+  </header>
+  <nav>
+    <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+       <a href="foodrecipe.html">Food Recipes</a>
+    </li>
+    <li>
+       <a href="morerecipes.html">Additional Recipes</a>
+     </li>
+    <li>
+      <a href='login.html'>Login Page</a>
+    </li>
+    <li>
+    <a href="signup.html">Sign Up</a>
+    </li>
+  </ul>
+ </nav>
+ <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h3 class="modal-title" id="example">Add Recipe</h3>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+
+             <div class="modal-body">
+                 <form id="recipeForm">
+                     <div class="form-group row">
+                         <label for="recipeid" class="col-sm-2 col-form-label">recipeid</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="recipeid" placeholder="recipid">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="foodrecipe" class="col-sm-2 col-form-label">foodrecipe</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="foodrecipe" placeholder="foodrecipe">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="cooktime" class="col-sm-2 col-form-label">cooktime</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="cooktime" placeholder="cooktime">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="ingridients" class="col-sm-2 col-form-label">ingridients</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="ingridients" placeholder="ingridients">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="cookinginstructions" class="col-sm-2 col-form-label">cookinginstructions</label>
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="cookinginstructions" placeholder="cookinginstructions">
+                         </div>
+                     </div>
+
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button id="addRecipe" color="green" type="button" class="btn btn-primary" data-toggle="modal"
+                             data-target=#exampleModal>Add
+                     </button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+ <button id="addRecipe" color="green" type="button" class="btn btn-primary" data-toggle="modal" data-target=#exampleModal>Add</button>
+<table class="table table-bordered table-hover" width="100%">
+  <thead style="background-color:lightblue;" class="table-borderless">
+  <tr>
+    <th>RecipeID</th>
+    <th>FoodItem</th>
+    <th>Cooktime</th>
+    <th>Ingridients</th>
+    <th>Cooking Ingridients</th>
+  </tr>
+</thead>
+  <tbody id="recipe"></tbody>
+</table>
+</body>
+</html>
